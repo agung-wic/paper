@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  25 JUN 2021 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.20)  30 JUN 2021 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -655,13 +655,24 @@ File: img/map-result.png Graphic file (type png)
 <use img/map-result.png>
 Package pdftex.def Info: img/map-result.png  used on input line 280.
 (pdftex.def)             Requested size: 136.90906pt x 138.91653pt.
-<img/hasil.png, id=165, 1927.2pt x 1084.05pt>
-File: img/hasil.png Graphic file (type png)
-<use img/hasil.png>
-Package pdftex.def Info: img/hasil.png  used on input line 304.
-(pdftex.def)             Requested size: 206.39685pt x 116.08649pt.
+<img/frame800.jpg, id=166, 1284.8pt x 722.7pt>
+File: img/frame800.jpg Graphic file (type jpg)
+<use img/frame800.jpg>
+Package pdftex.def Info: img/frame800.jpg  used on input line 306.
+(pdftex.def)             Requested size: 103.19843pt x 58.04875pt.
+<img/frame475.jpg, id=167, 1927.2pt x 1084.05pt>
+File: img/frame475.jpg Graphic file (type jpg)
+<use img/frame475.jpg>
+Package pdftex.def Info: img/frame475.jpg  used on input line 311.
+(pdftex.def)             Requested size: 103.19843pt x 58.04324pt.
+<img/frame180.jpg, id=168, 1927.2pt x 1084.05pt>
+File: img/frame180.jpg Graphic file (type jpg)
+<use img/frame180.jpg>
+Package pdftex.def Info: img/frame180.jpg  used on input line 316.
+(pdftex.def)             Requested size: 103.19843pt x 58.04324pt.
 
-(./conference_041818.bbl
+(./conference_041818.bbl [6 <./img/validation.png> <./img/map-result.png> <./im
+g/frame800.jpg> <./img/frame475.jpg> <./img/frame180.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 47--50
 []\OT1/ptm/m/n/8 I. Mat-ter-port, ``Mask r-cnn for ob-ject de-tec-tion and
  []
@@ -690,26 +701,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
-[6 <./img/validation.png> <./img/map-result.png> <./img/hasil.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
+[7
 
-(./conference_041818.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
+ (./conference_041818.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 343.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 343.
 Package rerunfilecheck Info: File `conference_041818.out' has not changed.
-(rerunfilecheck)             Checksum: 9A1C64A79CD6DEEEDDF7BB9E1AD64727;862.
+(rerunfilecheck)             Checksum: AD215215B41DF5722AF9E9365450FCB4;862.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
  ) 
 Here is how much of TeX's memory you used:
- 10219 strings out of 481239
- 159559 string characters out of 5920377
- 428598 words of memory out of 5000000
- 25226 multiletter control sequences out of 15000+600000
+ 10235 strings out of 481239
+ 159843 string characters out of 5920377
+ 428692 words of memory out of 5000000
+ 25237 multiletter control sequences out of 15000+600000
  579158 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,100p,1519b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -720,10 +732,10 @@ fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_041818.pdf (6 pages, 5421702 bytes).
+Output written on conference_041818.pdf (7 pages, 3990349 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 56 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

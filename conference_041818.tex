@@ -64,7 +64,7 @@
 	
 	
 	\begin{abstract}
-		\textit{Dewasa ini, fitur keselamatan pada kendaraan roda empat atau mobil sudah sangat berkembang pesat. Hal tersebut terbukti dengan banyaknya produsen mobil yang menerapkan teknologi seat belt, air bag, adaptive cruise control, electronic stability control, autonomous emergency braking, blind spot monitoring dan lain sebagainya. Namun, fitur yang sudah disebutkan diatas dinilai masih kurang ramah bagi pejalan kaki. Terbukti menurut data dari WHO, terdapat 270.000 pejalan kaki meninggal dunia setiap tahun atau sekitar 22\% dari seluruh korban meniggal akibat kecelakan di jalan. Berawal dari permasalahan tersebut, penulis akan melakukan penelitian mengenai pendeteksian pejalan kaki pada zebracross untuk peringatan dini pengendara mobil sebagai topik penelitian. Pada penelitian ini, terdapat 2 objek yang akan dideteksi yaitu pejalan kaki dan zebracross dengan menggunakan metode Mask R-CNN. Hasil yang diharapkan dari penelitian kali ini adalah terdapat model yang memiliki akurasi yang tinggi dari dataset yang tersedia yaitu Caltech Pedestrian Dataset.}
+		\textit{Dewasa ini, fitur keselamatan pada kendaraan roda empat atau mobil sudah sangat berkembang pesat. Hal tersebut terbukti dengan banyaknya produsen mobil yang menerapkan teknologi seat belt, air bag, adaptive cruise control, electronic stability control, autonomous emergency braking, blind spot monitoring dan lain sebagainya. Namun, fitur yang sudah disebutkan diatas dinilai masih kurang ramah bagi pejalan kaki. Terbukti menurut data dari WHO, terdapat 270.000 pejalan kaki meninggal dunia setiap tahun atau sekitar 22\% dari seluruh korban meniggal akibat kecelakan di jalan. Berawal dari permasalahan tersebut, penulis akan melakukan penelitian mengenai pendeteksian pejalan kaki pada zebracross untuk peringatan dini pengendara mobil sebagai topik penelitian. Pada tugas akhir ini, terdapat 3 objek yang akan dideteksi yaitu pejalan kaki, zebracross dan pengendara motor dengan menggunakan metode Mask R-CNN. Hasil terbaik yang didapatkan adalah pada penggunaan \textit{ResNet-101} untuk \textit{backbone Mask R-CNN} dengan skor \textit{mAP} sebesar 76.605\%, mAR sebesar 85.375\% serta \textit{F1-Score} sebesar 80.302\% .}
 	\end{abstract}
 	\begin{IEEEkeywords}
 		\textit{Pejalan Kaki, Zebracross, Mask R-CNN, Pengolahan Citra}
@@ -298,16 +298,45 @@
 	
 	\subsection{Hasil Testing}
 	\vspace{1ex}
-	Proses \textit{testing} menggunakan data dengan format video berdurasi 1 menit dengan \textit{frame per seconds} sebesar 30. Gambar hasil deteksi dapat dilihat pada gambar \ref{fig:4}.
+	Proses \textit{testing} dilakukan menggunakan data dengan format gambar dan video dalam tiga kondisi yaitu pagi, siang dan malam hari. Pada \textit{testing} dengan menggunakan \textit{input} berupa gambar seperti yang tertampil pada Gambar \ref{fig:compare} didapatkan hasil seperti pada Tabel \ref{tab:result}
 	\vspace{1ex}
-	\begin{figure}[h!] \centering
-		\includegraphics[width=0.4\textwidth]{img/hasil.png}
-		\caption{Hasil \textit{testing}.}
-		\label{fig:4}
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=\textwidth]{img/frame800.jpg}
+			\caption*{(a) Pagi}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=\textwidth]{img/frame475.jpg}
+			\caption*{(b) Siang}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=\textwidth]{img/frame180.jpg}
+			\caption*{(c) Malam}
+		\end{minipage}
+		\caption{{Gambar \textit{Testing} pada Kondisi yang Berbeda}}
+		\label{fig:compare}
 	\end{figure}
+
+	\vspace{1ex}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|l|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textit{\textbf{Backbone}}} & \textit{\textbf{mAP (\%)}} & \textit{\textbf{mAR (\%)}} & \textit{\textbf{F1 Score (\%)}} \\ \hline
+			ResNet-50                                        & 66.785                     & 77                         & 71.529                          \\ \hline
+			\textit{ResNet-101}                              & 76.605                     & 85.375                     & 90.302                          \\ \hline
+			\textit{MobileNet-v1}                            & 25                         & Nan                        & Nan                             \\ \hline
+		\end{tabular}
+		\caption{Perbandingan Evaluasi Setiap Model}
+		\label{tab:result}
+	\end{table}
 	
 	\section{Conclusion}
-	
+	\vspace{1ex}
+	Berdasarkan hasil pengujian yang telah dilakukan, penulis dapat menyimpulkan bahwa dalam penelitian ini telah diimplementasikan dengan baik proses pendeteksian pejalan kaki dan zebracross dengan menggunakan Mask R-CNN, dengan \textit{mean Average Precision} sebesar 76.62\%. {Backbone} ResNet-101 memiliki hasil akurasi yang lebih baik dibanding dengan \textit{backbone} lainnya dengan peforma lebih tinggi sebesar 12.82\% dibanding ResNet-50 dan 67.36\% dibanding MobileNet-v1. Waktu yang dibutuhkan dalam proses pendektesian akan semakin lama jika objek yang berada pada gambar semakin banyak. 
 	
 	\bibliographystyle{IEEEtran}
 	\bibliography{dpustaka}
