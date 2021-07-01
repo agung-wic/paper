@@ -88,7 +88,7 @@
 	
 	\section{Desain dan Implementasi Sistem}
 	\vspace{1ex}
-	Pada \textit{paper} ini dijelaskan mengenai penerapan metode \textit{Deep Learning} yang bertujuan untuk mendeteksi adanya pejalan kaki yang sedang melewati \textit{zebracross} maupun berada disekitarnya. Gambar \ref{fig:1} menampilkan blok diagram dari sistem kerja yang digunakan untuk mendeteksi pejalan kaki pada \textit{zebracross}. Pada penelitian ini, digunakan dataset dari Caltech Pedestrian Dataset.
+	Pada \textit{paper} ini dijelaskan mengenai penerapan metode \textit{Deep Learning} yang bertujuan untuk mendeteksi dan mensegmentasikan adanya pejalan kaki yang sedang melewati \textit{zebracross} maupun berada disekitarnya. Gambar \ref{fig:1} menampilkan blok diagram dari sistem kerja yang digunakan untuk mendeteksi pejalan kaki pada \textit{zebracross}. Pada penelitian ini, digunakan dataset dari Caltech Pedestrian Dataset.
 	\vspace{1ex}
 	\begin{figure}[!ht] \centering
 		\includegraphics[width=0.4\textwidth]{img/blok-diagram.png}
@@ -336,7 +336,7 @@
 	
 	\section{Conclusion}
 	\vspace{1ex}
-	Berdasarkan hasil pengujian yang telah dilakukan, penulis dapat menyimpulkan bahwa dalam penelitian ini telah diimplementasikan dengan baik proses pendeteksian pejalan kaki dan zebracross dengan menggunakan Mask R-CNN, dengan \textit{mean Average Precision} sebesar 76.62\%. {Backbone} ResNet-101 memiliki hasil akurasi yang lebih baik dibanding dengan \textit{backbone} lainnya dengan peforma lebih tinggi sebesar 12.82\% dibanding ResNet-50 dan 67.36\% dibanding MobileNet-v1. Waktu yang dibutuhkan dalam proses pendektesian akan semakin lama jika objek yang berada pada gambar semakin banyak. 
+	Berdasarkan hasil pengujian yang telah dilakukan, penulis dapat menyimpulkan bahwa dalam penelitian ini telah diimplementasikan dengan baik proses deteksi dan segementasi pejalan kaki dan zebracross dengan menggunakan Mask R-CNN, dengan \textit{mean Average Precision} sebesar 76.62\%. {Backbone} ResNet-101 memiliki hasil akurasi yang lebih baik dibanding dengan \textit{backbone} lainnya dengan peforma lebih tinggi sebesar 12.82\% dibanding ResNet-50 dan 67.36\% dibanding MobileNet-v1. Waktu yang dibutuhkan dalam proses pendektesian akan semakin lama jika objek yang berada pada gambar semakin banyak. 
 	
 	\bibliographystyle{IEEEtran}
 	\bibliography{dpustaka}
