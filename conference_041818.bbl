@@ -21,13 +21,23 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{who}
+\BIBentryALTinterwordspacing
+{World Health Organization}. More than 270 000 pedestrians killed on roads each
+  year. [Online]. Available:
+  \url{https://www.who.int/news/item/02-05-2013-more-than-270-000-pedestrians-killed-on-roads-each-year}
+\BIBentrySTDinterwordspacing
+
+\bibitem{grsf}
+\BIBentryALTinterwordspacing
+{The Global Road Safety Facility}. Indonesia, indonesia's road safety country
+  profile. [Online]. Available:
+  \url{https://www.roadsafetyfacility.org/country/indonesia}
+\BIBentrySTDinterwordspacing
+
 \bibitem{cit:1}
 A.~Angelova, A.~Krizhevsky, V.~Vanhoucke, A.~Ogale, and D.~Ferguson,
   ``Real-time pedestrian detection with deep network cascades,'' 2015.
-
-\bibitem{cit:4}
-M.~A. Malbog, ``Mask r-cnn for pedestrian crosswalk detection and instance
-  segmentation,'' pp. 1--5, 2019.
 
 \bibitem{cit:2}
 I.~Hasan, S.~Liao, J.~Li, S.~Akram, and L.~Shao, ``Pedestrian detection: The
@@ -38,10 +48,9 @@ C.~Xu, G.~Wang, S.~Yan, J.~Yu, B.~Zhang, S.~Dai, Y.~Li, and L.~Xu, ``Fast
   vehicle and pedestrian detection using improved mask r-cnn,''
   \emph{Mathematical Problems in Engineering}, vol. 2020, 2020.
 
-\bibitem{cit:5}
-Y.~Chen, S.~Guo, B.~Zhang, and K.-L. Du, ``A pedestrian detection and tracking
-  system based on video processing technology,'' \emph{Proceedings - 2013 4th
-  Global Congress on Intelligent Systems, GCIS 2013}, pp. 69--73, 12 2013.
+\bibitem{cit:4}
+M.~A. Malbog, ``Mask r-cnn for pedestrian crosswalk detection and instance
+  segmentation,'' pp. 1--5, 2019.
 
 \bibitem{cit:11}
 I.~Matterport, ``Mask r-cnn for object detection and segmentation,''

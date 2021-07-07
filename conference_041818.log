@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.7.2)  2 JUL 2021 01:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.7.2)  7 JUL 2021 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -621,135 +621,136 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 64.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 1939) in paragraph at lines 83--84
-\OT1/ptm/m/n/10 pada mo-bil pada masa kini, dibuk-tikan den-gan adanya
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<img/blok-diagram.png, id=81, 573.14125pt x 151.56625pt>
+<img/blok-diagram.png, id=80, 573.14125pt x 151.56625pt>
 File: img/blok-diagram.png Graphic file (type png)
 <use img/blok-diagram.png>
-Package pdftex.def Info: img/blok-diagram.png  used on input line 94.
+Package pdftex.def Info: img/blok-diagram.png  used on input line 93.
 (pdftex.def)             Requested size: 206.39685pt x 54.5823pt.
-<img/caltech.png, id=84, 756.8275pt x 127.47626pt>
+<img/caltech.png, id=83, 756.8275pt x 127.47626pt>
 File: img/caltech.png Graphic file (type png)
 <use img/caltech.png>
-Package pdftex.def Info: img/caltech.png  used on input line 106.
+Package pdftex.def Info: img/caltech.png  used on input line 105.
 (pdftex.def)             Requested size: 189.2064pt x 31.86897pt.
 
-Underfull \hbox (badness 1533) in paragraph at lines 103--110
+Underfull \hbox (badness 1533) in paragraph at lines 102--109
 []\OT1/ptm/m/it/10 Caltech Pedes-trian Database\OT1/ptm/m/n/10 , meru-pakan kum
 pu-lan
  []
 
-<img/youtube-dataset.png, id=86, 1367.1075pt x 771.88374pt>
+<img/youtube-dataset.png, id=85, 1367.1075pt x 771.88374pt>
 File: img/youtube-dataset.png Graphic file (type png)
 <use img/youtube-dataset.png>
-Package pdftex.def Info: img/youtube-dataset.png  used on input line 115.
+Package pdftex.def Info: img/youtube-dataset.png  used on input line 114.
 (pdftex.def)             Requested size: 136.71875pt x 77.19289pt.
-<img/data-splitting.png, id=88, 442.65375pt x 111.41624pt>
+<img/data-splitting.png, id=87, 442.65375pt x 111.41624pt>
 File: img/data-splitting.png Graphic file (type png)
 <use img/data-splitting.png>
-Package pdftex.def Info: img/data-splitting.png  used on input line 139.
+Package pdftex.def Info: img/data-splitting.png  used on input line 138.
 (pdftex.def)             Requested size: 221.32632pt x 55.70798pt.
 [2 <./img/blok-diagram.png> <./img/caltech.png> <./img/youtube-dataset.png> <./
 img/data-splitting.png>]
-<img/flowchart-preprocessing.png, id=111, 182.6825pt x 533.995pt>
+<img/flowchart-preprocessing.png, id=110, 182.6825pt x 533.995pt>
 File: img/flowchart-preprocessing.png Graphic file (type png)
 <use img/flowchart-preprocessing.png>
 Package pdftex.def Info: img/flowchart-preprocessing.png  used on input line 16
-2.
+1.
 (pdftex.def)             Requested size: 54.80516pt x 160.19974pt.
 
-Underfull \hbox (badness 2384) in paragraph at lines 167--169
+Underfull \hbox (badness 2384) in paragraph at lines 166--168
 []\OT1/ptm/m/n/10 Berikut meru-pakan pen-je-lasan men-ge-nai taha-pan \OT1/ptm/
 m/it/10 pre-
  []
 
-<img/image-resizing.png, id=112, 392.46625pt x 131.49126pt>
+<img/image-resizing.png, id=111, 392.46625pt x 131.49126pt>
 File: img/image-resizing.png Graphic file (type png)
 <use img/image-resizing.png>
-Package pdftex.def Info: img/image-resizing.png  used on input line 176.
+Package pdftex.def Info: img/image-resizing.png  used on input line 175.
 (pdftex.def)             Requested size: 196.23264pt x 65.74545pt.
-<img/image-augmentation.png, id=115, 470.75874pt x 265.99374pt>
+<img/image-augmentation.png, id=114, 470.75874pt x 265.99374pt>
 File: img/image-augmentation.png Graphic file (type png)
 <use img/image-augmentation.png>
-Package pdftex.def Info: img/image-augmentation.png  used on input line 188.
+Package pdftex.def Info: img/image-augmentation.png  used on input line 187.
 (pdftex.def)             Requested size: 211.83948pt x 119.69608pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./img/flowchart-preprocessing.png> <./img/image-resizing.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./img/flowchart-preprocessing.png> <./img/image-resizing.png>]
 <img/mask-rcnn-arch.png, id=129, 733.74126pt x 472.76625pt>
 File: img/mask-rcnn-arch.png Graphic file (type png)
 <use img/mask-rcnn-arch.png>
-Package pdftex.def Info: img/mask-rcnn-arch.png  used on input line 201.
+Package pdftex.def Info: img/mask-rcnn-arch.png  used on input line 200.
 (pdftex.def)             Requested size: 220.12407pt x 141.83096pt.
  [4 <./img/image-augmentation.png> <./img/mask-rcnn-arch.png>]
 <img/cross-validation.png, id=142, 457.71pt x 322.20375pt>
 File: img/cross-validation.png Graphic file (type png)
 <use img/cross-validation.png>
-Package pdftex.def Info: img/cross-validation.png  used on input line 231.
+Package pdftex.def Info: img/cross-validation.png  used on input line 230.
 (pdftex.def)             Requested size: 160.2009pt x 112.773pt.
 <img/testing.png, id=144, 182.6825pt x 624.3325pt>
 File: img/testing.png Graphic file (type png)
 <use img/testing.png>
-Package pdftex.def Info: img/testing.png  used on input line 242.
+Package pdftex.def Info: img/testing.png  used on input line 241.
 (pdftex.def)             Requested size: 54.80516pt x 187.3012pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <img/training.png, id=146, 693.59125pt x 633.36626pt>
 File: img/training.png Graphic file (type png)
 <use img/training.png>
-Package pdftex.def Info: img/training.png  used on input line 257.
+Package pdftex.def Info: img/training.png  used on input line 256.
 (pdftex.def)             Requested size: 208.07898pt x 190.01134pt.
-
-
-LaTeX Warning: Reference `validation' on page 5 undefined on input line 262.
-
-<img/validation.png, id=147, 693.59125pt x 628.3475pt>
+[5 <./img/cross-validation.png> <./img/testing.png> <./img/training.png>]
+<img/validation.png, id=161, 693.59125pt x 628.3475pt>
 File: img/validation.png Graphic file (type png)
 <use img/validation.png>
-Package pdftex.def Info: img/validation.png  used on input line 266.
+Package pdftex.def Info: img/validation.png  used on input line 265.
 (pdftex.def)             Requested size: 208.07898pt x 188.50569pt.
-[5 <./img/cross-validation.png> <./img/testing.png> <./img/training.png>]
-<img/map-result.png, id=162, 342.27875pt x 347.2975pt>
+<img/map-result.png, id=163, 342.27875pt x 347.2975pt>
 File: img/map-result.png Graphic file (type png)
 <use img/map-result.png>
-Package pdftex.def Info: img/map-result.png  used on input line 280.
+Package pdftex.def Info: img/map-result.png  used on input line 279.
 (pdftex.def)             Requested size: 136.90906pt x 138.91653pt.
-<img/frame800.jpg, id=166, 1284.8pt x 722.7pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/frame800.jpg, id=167, 1284.8pt x 722.7pt>
 File: img/frame800.jpg Graphic file (type jpg)
 <use img/frame800.jpg>
-Package pdftex.def Info: img/frame800.jpg  used on input line 306.
+Package pdftex.def Info: img/frame800.jpg  used on input line 305.
 (pdftex.def)             Requested size: 103.19843pt x 58.04875pt.
-<img/frame475.jpg, id=167, 1927.2pt x 1084.05pt>
+<img/frame475.jpg, id=168, 1927.2pt x 1084.05pt>
 File: img/frame475.jpg Graphic file (type jpg)
 <use img/frame475.jpg>
-Package pdftex.def Info: img/frame475.jpg  used on input line 311.
+Package pdftex.def Info: img/frame475.jpg  used on input line 310.
 (pdftex.def)             Requested size: 103.19843pt x 58.04324pt.
-<img/frame180.jpg, id=168, 1927.2pt x 1084.05pt>
+<img/frame180.jpg, id=169, 1927.2pt x 1084.05pt>
 File: img/frame180.jpg Graphic file (type jpg)
 <use img/frame180.jpg>
-Package pdftex.def Info: img/frame180.jpg  used on input line 316.
+Package pdftex.def Info: img/frame180.jpg  used on input line 315.
 (pdftex.def)             Requested size: 103.19843pt x 58.04324pt.
-
 (./conference_041818.bbl [6 <./img/validation.png> <./img/map-result.png> <./im
 g/frame800.jpg> <./img/frame475.jpg> <./img/frame180.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 47--50
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
 []\OT1/ptm/m/n/8 I. Mat-ter-port, ``Mask r-cnn for ob-ject de-tec-tion and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--50
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
 \OT1/ptm/m/n/8 seg-men-ta-tion,'' []$https : / / github . com / matterport / Ma
 sk[]RCNN #
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--50
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
 \OT1/ptm/m/n/8 mask-[]r-[]cnn-[]for-[]object-[]detection-[]and-[]segmentation$[
 ], 2019, acessed :
  []
@@ -766,30 +767,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
 [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
  (./conference_041818.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 343.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 343.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
 Package rerunfilecheck Info: File `conference_041818.out' has not changed.
 (rerunfilecheck)             Checksum: AD215215B41DF5722AF9E9365450FCB4;862.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 343.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
  9905 strings out of 494342
- 151932 string characters out of 6168656
- 242561 words of memory out of 5000000
+ 151925 string characters out of 6168656
+ 243561 words of memory out of 5000000
  13166 multiletter control sequences out of 15000+600000
- 50460 words of font info for 105 fonts, out of 8000000 for 9000
+ 49353 words of font info for 104 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
- 59i,11n,94p,1519b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,11n,94p,1339b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
@@ -797,10 +794,10 @@ fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_041818.pdf (7 pages, 3990364 bytes).
+Output written on conference_041818.pdf (7 pages, 3988971 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 58 named destinations out of 1000 (max. 500000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
