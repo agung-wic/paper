@@ -21,7 +21,7 @@
 		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 	
-	\title{Deteksi Pejalan Kaki pada \textit{Zebracross} untuk Peringatan Dini Pejalan Kaki menggunakan Mask R-CNN}
+	\title{Deteksi Pejalan Kaki pada \textit{Zebra Cross} untuk Peringatan Dini Pejalan Kaki menggunakan Mask R-CNN}
 	
 	\makeatletter
 	\newcommand{\linebreakand}{%
@@ -64,31 +64,31 @@
 	
 	
 	\begin{abstract}
-		\textit{Dewasa ini, fitur keselamatan pada kendaraan roda empat atau mobil sudah sangat berkembang pesat. Hal tersebut terbukti dengan banyaknya produsen mobil yang menerapkan teknologi seat belt, air bag, adaptive cruise control, electronic stability control, autonomous emergency braking, blind spot monitoring dan lain sebagainya. Namun, fitur yang sudah disebutkan diatas dinilai masih kurang ramah bagi pejalan kaki. Terbukti menurut data dari WHO, terdapat 270.000 pejalan kaki meninggal dunia setiap tahun atau sekitar 22\% dari seluruh korban meniggal akibat kecelakan di jalan. Berawal dari permasalahan tersebut, penulis akan melakukan penelitian mengenai pendeteksian pejalan kaki pada zebracross untuk peringatan dini pengendara mobil sebagai topik penelitian. Pada tugas akhir ini, terdapat 3 objek yang akan dideteksi yaitu pejalan kaki, zebracross dan pengendara motor dengan menggunakan metode Mask R-CNN. Hasil terbaik yang didapatkan adalah pada penggunaan \textit{ResNet-101} untuk \textit{backbone Mask R-CNN} dengan skor \textit{mAP} sebesar 76.605\%, mAR sebesar 85.375\% serta \textit{F1-Score} sebesar 80.302\% .}
+		\textit{Dewasa ini, fitur keselamatan pada kendaraan roda empat atau mobil sudah sangat berkembang pesat. Hal tersebut terbukti dengan banyaknya produsen mobil yang menerapkan teknologi \textit{seat belt, air bag, adaptive cruise control, electronic stability control, autonomous emergency braking, blind spot monitoring} dan lain sebagainya. Namun, fitur yang sudah disebutkan diatas dinilai masih kurang ramah bagi pejalan kaki. Terbukti menurut data dari WHO, terdapat 270.000 pejalan kaki meninggal dunia setiap tahun atau sekitar 22\% dari seluruh korban meniggal akibat kecelakan di jalan. Berawal dari permasalahan tersebut, penulis akan melakukan penelitian mengenai pendeteksian pejalan kaki pada \textit{zebra cross} untuk peringatan dini pengendara mobil sebagai topik penelitian. Pada tugas akhir ini, terdapat 3 objek yang akan dideteksi yaitu pejalan kaki, \textit{zebra cross} dan pengendara motor dengan menggunakan metode Mask R-CNN. Namun, objek utama yang dideteksi adalah pejalan kaki dan zebra cross, sehingga hasil deteksi pengendara tidak ditampilkan pada gambar akhir. Hasil terbaik yang didapatkan adalah pada penggunaan \textit{ResNet-101} untuk \textit{backbone Mask R-CNN} dengan skor \textit{mAP} sebesar 90.476\%, mAR sebesar 88.889\% serta \textit{F1-Score} sebesar 87.777\% .}
 	\end{abstract}
 	\begin{IEEEkeywords}
-		\textit{Pejalan Kaki, Zebracross, Mask R-CNN, Pengolahan Citra}
+		\textit{Pejalan Kaki, Zebra Cross, Mask R-CNN, Pengolahan Citra}
 	\end{IEEEkeywords}
 	
 	\section{Latar Belakang}
-	\IEEEPARstart{M}{obil} merupakan salah satu jenis kendaraan bermotor yang banyak terdapat di Indonesia. Pada tahun 2018 Badan Pusat Statistik mencatat terdapat 16.440.987 mobil penumpang yang berada di In donesia. Dengan bertambahnya jumlah mobil di Indonesia dari tahun ke tahun, meningkatkan juga jumlah kecelakaan mobil. Fitur keselamatan dan keamanan pada mobil sangat penting bagi para pen gendara dan penumpang, sehingga para produsen mobil berusaha meningkatkan teknologi keselamatan dan keamanan pada mobil buatannya. Sebagai contoh beberapa fitur keselamatan dan keamanan yang terdapat pada mobil antara lain, adaptive cruise control, hill strat assist, blind spot monitoring, electronic stability control dan lain sebagainya.\cite{cit:1}
+	\IEEEPARstart{M}{obil} merupakan salah satu jenis kendaraan bermotor yang banyak terdapat di Indonesia. Pada tahun 2019 Badan Pusat Statistik mencatat terdapat 15.592.419 mobil penumpang yang berada di Indonesia \cite{cit:13}. Dengan bertambahnya jumlah mobil di Indonesia dari tahun ke tahun, meningkatkan juga jumlah kecelakaan mobil. Fitur keselamatan dan keamanan pada mobil sangat penting bagi para pengendara dan penumpang, sehingga para produsen mobil berusaha meningkatkan teknologi keselamatan dan keamanan pada mobil buatannya. Sebagai contoh beberapa fitur keselamatan dan keamanan yang terdapat pada mobil antara lain, \textit{adaptive cruise control, hill strat assist, blind spot monitoring, electronic stability control} dan lain sebagainya.
 	
 	
 	\vspace{1ex}
 	
-	Menurut data dari WHO, terdapat 270.000 pejalan kaki meninggal dunia setiap tahun atau sekitar 22\% dari seluruh korban meniggal akibat kecelakan di jalan. Melihat kegiatan para pejalan kaki yang jarang berada di badan jalan, angka tersebut tentu cukup tinggi. Para pejalan kaki hanya menggunakan badan jalan ketika hendak menyebrang jalan lewat zebracross. Kelalaian dari pejalan kaki maupun pengendara mobil merupakan faktor utama mengapa angka kematian pejalan kaki cukup tinggi. Salah satu contoh kelalaian pejalan kaki adalah pada saat menyebrang jalan tidak memperhatikan kendaraan yang akan lewat dan atau melihat rambu serta lampu lalu lintas. Di sisi pengendara mobil, kelelahan, kurangnya fokus saat berkendara dan tidak memperhatikan rambu maupun marka dapat berakibat fatal baik kepada pejalan kaki dan pengendara lain. \cite{cit:4}.
+	Menurut data dari WHO, terdapat 270.000 pejalan kaki meninggal dunia setiap tahun atau sekitar 22\% dari seluruh korban meniggal akibat kecelakan di jalan \cite{cit:14}. Melihat kegiatan para pejalan kaki yang jarang berada di badan jalan, angka tersebut tentu cukup tinggi. Para pejalan kaki hanya menggunakan badan jalan ketika hendak menyebrang jalan lewat \textit{zebra cross}. Kelalaian dari pejalan kaki maupun pengendara mobil merupakan faktor utama mengapa angka kematian pejalan kaki cukup tinggi. Salah satu contoh kelalaian pejalan kaki adalah pada saat menyebrang jalan tidak memperhatikan kendaraan yang akan lewat dan atau melihat rambu serta lampu lalu lintas. Di sisi pengendara mobil, kelelahan, kurangnya fokus saat berkendara dan tidak memperhatikan rambu maupun marka dapat berakibat fatal baik kepada pejalan kaki dan pengendara lain.
 	
 	\vspace{1ex}
 	
-	Teknologi artificial intelligent sudah banyak disematkan pada mobil pada masa kini, dibuktikan dengan adanya teknologi adaptive cruise control, hill start assist dan lain sebagainya. Artificial intelligent khususnya deep learning tentu dapat digunakan untuk deteksi pejalan kaki di zebracross guna mengurangi jumlah korban akibat kecelakaan. Deteksi pejalan kaki dapat digabungkan dengan buzzer dan atau LED sebagai komponen output untuk mengingatkan kepada pengendara bahwa ada pejalan kaki yang sedang menyebrangi jalan serta mengembalikan fokus untuk berkendara.
+	Teknologi \textit{artificial intelligent} sudah banyak disematkan pada mobil pada masa kini, dibuktikan dengan adanya teknologi \textit{adaptive cruise control, hill start assist} dan lain sebagainya. \textit{Artificial intelligent} khususnya \textit{deep learning} tentu dapat digunakan untuk deteksi pejalan kaki di \textit{zebra cross} guna mengurangi jumlah korban akibat kecelakaan. Deteksi pejalan kaki dapat digabungkan dengan \textit{buzzer} dan atau \textit{LED} sebagai komponen \textit{output} untuk mengingatkan kepada pengendara bahwa ada pejalan kaki yang sedang menyebrangi jalan serta mengembalikan fokus untuk berkendara.
 	
 	\vspace{1ex} 
 	
-	Penelitian mengenai deteksi pejalan kaki di jalan raya sudah ada sebelumnya seperti Real-Time Pedes trian Detection With Deep Network Cascades (Anelia Angelova et al.) \cite{cit:1}, dimana pada penelitian ini dihasilkan average miss rate sebesar 26,2\% yang berjalan secara real time. Selanjutnya terdapat peneli tian yang berjudul Pedestrian Detection: The Elephant In The Room (Irtiza Hasan et al.). \cite{cit:2}. Pada penelitian ini membandingkan antara detektor objek secara umum yaitu Cascade R-CNN dengan detek tor objek khusus pejalan kaki pada dataset yang berbeda. Pada penelitian yang berjudul Fast Vehicle and Pedestrian Detection Using Improved Mask R-CNN Vincent Vanhoucke (Chenchen Xu et al.). \cite{cit:3} dijelaskan mengenai deteksi terhadap kendaraan yang bergerak dan pejalan kaki. Penggunaan Restnet 86 untuk menggantikan Restnet-101 sebagai backbone membuat deteksi lebih akurat pada dataset yang terdapat pada MS COCO. Pada MASK R-CNN for Pedestrian Crosswalk Detection and Instance Segmen tation (Mon Arjay Malbog). \cite{cit:4} deteksi hanya dilakukan pada pedestrian crosswalk atau zebracross saja. Taining data dilakukan dengan Mask R-CNN untuk deteksi objek serta Restnet-101 sebagai backbone. Selanjutnya pada A Pedestrian Detection and Tracking System Based on Video Processing Technology (Chen, Yuanyuan et al.) \cite{cit:5}. dijelaskan mengenai deteksi pada pejalan kaki, pelacakan penghitungan serta peringatan resiko pada sebuah segemen video. 
+	Penelitian mengenai deteksi pejalan kaki di jalan raya sudah ada sebelumnya seperti \textit{Real-Time Pedestrian Detection With Deep Network Cascades} (Anelia Angelova et al.) \cite{cit:1}, dimana pada penelitian ini dihasilkan \textit{average miss rate} sebesar 26,2\% yang berjalan secara \textit{real time}. Selanjutnya terdapat penelitian yang berjudul \textit{Pedestrian Detection: The Elephant In The Room} (Irtiza Hasan et al.). \cite{cit:2}. Pada penelitian ini membandingkan antara detektor objek secara umum yaitu \textit{Cascade R-CNN} dengan detektor objek khusus pejalan kaki pada dataset yang berbeda. Pada penelitian yang berjudul \textit{Fast Vehicle and Pedestrian Detection Using Improved Mask R-CNN} (Chenchen Xu et al.) \cite{cit:3} dijelaskan mengenai deteksi terhadap kendaraan yang bergerak dan pejalan kaki. Penggunaan \textit{ResNet-86} untuk menggantikan \textit{RestNet-101} sebagai \textit{backbone} membuat deteksi lebih akurat pada dataset yang terdapat pada MS COCO. Pada \textit{MASK R-CNN for Pedestrian Crosswalk Detection and Instance Segmentation} (Mon Arjay Malbog) \cite{cit:4} deteksi hanya dilakukan pada pedestrian \textit{crosswalk} atau \textit{zebra cross} saja. \textit{Training} data dilakukan dengan \textit{Mask R-CNN }untuk deteksi objek serta \textit{RestNet-101} sebagai \textit{backbone}. Selanjutnya pada \textit{A Pedestrian Detection and Tracking System Based on Video Processing Technology} (Chen, Yuanyuan et al.) \cite{cit:5}. dijelaskan mengenai deteksi pada pejalan kaki, pelacakan penghitungan serta peringatan resiko pada sebuah segmen video. 
 	
 	\section{Desain dan Implementasi Sistem}
 	\vspace{1ex}
-	Pada \textit{paper} ini dijelaskan mengenai penerapan metode \textit{Deep Learning} yang bertujuan untuk mendeteksi dan mensegmentasikan adanya pejalan kaki yang sedang melewati \textit{zebracross} maupun berada disekitarnya. Gambar \ref{fig:1} menampilkan blok diagram dari sistem kerja yang digunakan untuk mendeteksi pejalan kaki pada \textit{zebracross}. Pada penelitian ini, digunakan dataset dari Caltech Pedestrian Dataset.
+	Pada \textit{paper} ini dijelaskan mengenai penerapan metode \textit{Deep Learning} yang bertujuan untuk mendeteksi dan mensegmentasikan adanya pejalan kaki yang sedang melewati \textit{zebra cross} maupun berada disekitarnya. Gambar \ref{fig:1} menampilkan blok diagram dari sistem kerja yang digunakan untuk mendeteksi pejalan kaki pada \textit{zebra cross}. Pada penelitian ini, digunakan dataset dari \textit{Caltech Pedestrian Dataset}.
 	\vspace{1ex}
 	\begin{figure}[!ht] \centering
 		\includegraphics[width=0.4\textwidth]{img/blok-diagram.png}
@@ -117,7 +117,7 @@
 			\label{fig:youtube-dataset}
 		\end{figure}
 		
-		\item Pengambilan gambar secara mandiri menggunakan kamera \textit{smartphone} yang diambil dari sudut pandang pengendara motor dengan ukuran gambar yang diambil sebesar 1280x720 px. Pengambilan gambra dilakukan di jalan-jalan Surabaya. Setelah dilakukan pengambilan gambar, proses selanjutnya adalah pemberian label pada objek-objek yang ingin dideteksi.
+		\item Pengambilan gambar secara mandiri menggunakan kamera \textit{smartphone} yang diambil dari sudut pandang pengendara motor dengan ukuran gambar yang diambil sebesar 1280x720 px. Pengambilan gambar dilakukan di jalan-jalan Surabaya. Setelah dilakukan pengambilan gambar, proses selanjutnya adalah pemberian label pada objek-objek yang ingin dideteksi.
 	\end{enumerate}
 
 	\vspace{1ex}
@@ -285,6 +285,7 @@
 	Tabel \ref{tab:training-result} adalah tabel perbandingan dari \textit{output file size}, \textit{mAP}, \textit{training time} dari total 3 model dengan \textit{backbone} berbeda yang diuji. 
 	
 	\begin{table}[h]
+		\caption{Tabel Perbandingan Hasil \textit{Training}}
 		\begin{tabular}{|c|l|c|c|l|}
 			\hline
 			\textbf{No} & \multicolumn{1}{c|}{\textit{\textbf{Backbone}}} & \textit{\textbf{Output File Size}} & \textit{\textbf{mAP}} & \multicolumn{1}{c|}{\textit{\textbf{Training Time}}} \\ \hline
@@ -292,51 +293,94 @@
 			2           & Resnet-101                                      & 244 MB                                    & 96.21\%                      & 04:09:16                                \\ \hline
 			3           & Mobilenet-V1                                    & 83.3 MB                                    & 26.04\%                      & 03:18:44                              \\ \hline
 		\end{tabular}
-		\caption{Tabel Perbandingan Hasil \textit{Training}}
 		\label{tab:training-result}
 	\end{table}
 	
 	\subsection{Hasil Testing}
 	\vspace{1ex}
-	Proses \textit{testing} dilakukan menggunakan data dengan format gambar dan video dalam tiga kondisi yaitu pagi, siang dan malam hari. Pada \textit{testing} dengan menggunakan \textit{input} berupa gambar seperti yang tertampil pada Gambar \ref{fig:compare} didapatkan hasil seperti pada Tabel \ref{tab:result}
+	Proses \textit{testing} dilakukan menggunakan data dengan format gambar dan video dalam tiga kondisi yaitu pagi, siang dan malam hari. Pada \textit{testing} dengan menggunakan \textit{input} berupa gambar dengan hasil seperti yang tertampil pada Gambar \ref{fig:resnet-50}, \ref{fig:resnet-101}, dan \ref{fig:mobilenetv1}.Hasil evaluasi dari setiap model dapat dilihat pada Tabel \ref{tab:result}
 	\vspace{1ex}
 	\begin{figure}[h]
 		\centering
 		\begin{minipage}[b]{0.2\textwidth}
-			\includegraphics[width=\textwidth]{img/frame800.jpg}
+			\includegraphics[width=\textwidth]{img/fajar-frame800-resnet50.png}
 			\caption*{(a) Pagi}
 		\end{minipage}
 		\hfill
 		\begin{minipage}[b]{0.2\textwidth}
-			\includegraphics[width=\textwidth]{img/frame475.jpg}
+			\includegraphics[width=\textwidth]{img/siang-frame465-resnet50.png}
 			\caption*{(b) Siang}
 		\end{minipage}
 		\hfill
 		\begin{minipage}[b]{0.2\textwidth}
-			\includegraphics[width=\textwidth]{img/frame180.jpg}
+			\includegraphics[width=\textwidth]{img/malam-frame180-resnet50.png}
 			\caption*{(c) Malam}
 		\end{minipage}
-		\caption{{Gambar \textit{Testing} pada Kondisi yang Berbeda}}
-		\label{fig:compare}
+		\caption{{Gambar hasil \textit{Testing} pada Kondisi yang Berbeda dengan \textit{ResNet-50}}}
+		\label{fig:resnet-50}
+	\end{figure}
+
+	\vspace{1ex}
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=\textwidth]{img/fajar-frame800-resnet101.png}
+			\caption*{(a) Pagi}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=\textwidth]{img/siang-frame465-resnet101.png}
+			\caption*{(b) Siang}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=\textwidth]{img/malam-frame180-resnet101.png}
+			\caption*{(c) Malam}
+		\end{minipage}
+		\caption{{Gambar hasil \textit{Testing} pada Kondisi yang Berbeda dengan \textit{ResNet-101}}}
+		\label{fig:resnet-101}
+	\end{figure}
+
+	\vspace{1ex}
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=\textwidth]{img/fajar-frame800-mobilenetv1.png}
+			\caption*{(a) Pagi}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=\textwidth]{img/siang-frame465-mobilenetv1.png}
+			\caption*{(b) Siang}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.2\textwidth}
+			\includegraphics[width=\textwidth]{img/malam-frame180-mobilnetv1.png}
+			\caption*{(c) Malam}
+		\end{minipage}
+		\caption{{Gambar hasil \textit{Testing} pada Kondisi yang Berbeda dengan \textit{MobileNet-v1}}}
+		\label{fig:mobilenetv1}
 	\end{figure}
 
 	\vspace{1ex}
 	\begin{table}[h]
+		\caption{Perbandingan Evaluasi Setiap Model}
 		\centering
 		\begin{tabular}{|l|c|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textit{\textbf{Backbone}}} & \textit{\textbf{mAP (\%)}} & \textit{\textbf{mAR (\%)}} & \textit{\textbf{F1 Score (\%)}} \\ \hline
-			ResNet-50                                        & 66.785                     & 77                         & 71.529                          \\ \hline
-			\textit{ResNet-101}                              & 76.605                     & 85.375                     & 90.302                          \\ \hline
-			\textit{MobileNet-v1}                            & 25                         & Nan                        & Nan                             \\ \hline
+			ResNet-50                                        & 77.381                     & 76.667                         & 75.555                          \\ \hline
+			\textit{ResNet-101}                              & 90.476                     & 88.889                     & 87.777                          \\ \hline
+			\textit{MobileNet-v1}                            & 52.381                         & \textit{Nan}                        & \textit{Nan}                             \\ \hline
 		\end{tabular}
-		\caption{Perbandingan Evaluasi Setiap Model}
 		\label{tab:result}
 	\end{table}
 	
-	\section{Conclusion}
+	\section{Kesimpulan}
 	\vspace{1ex}
-	Berdasarkan hasil pengujian yang telah dilakukan, penulis dapat menyimpulkan bahwa dalam penelitian ini telah diimplementasikan dengan baik proses deteksi dan segementasi pejalan kaki dan zebracross dengan menggunakan Mask R-CNN, dengan \textit{mean Average Precision} sebesar 76.62\%. {Backbone} ResNet-101 memiliki hasil akurasi yang lebih baik dibanding dengan \textit{backbone} lainnya dengan peforma lebih tinggi sebesar 12.82\% dibanding ResNet-50 dan 67.36\% dibanding MobileNet-v1. Waktu yang dibutuhkan dalam proses pendektesian akan semakin lama jika objek yang berada pada gambar semakin banyak. 
+	Berdasarkan hasil pengujian yang telah dilakukan, penulis dapat menyimpulkan bahwa dalam penelitian ini telah diimplementasikan dengan baik proses deteksi dan segmentasi pejalan kaki dan \textit{zebra cross} dengan menggunakan \textit{Mask R-CNN}, dengan \textit{mean Average Precision} sebesar 90,476\%. \textit{Backbone ResNet-101} memiliki hasil akurasi yang lebih baik
+	dibanding dengan \textit{backbone} lainnya dengan peforma lebih tinggi sebesar 16,92\% dibanding \textit{ResNet-50} dan 71,73\% dibanding \textit{MobileNet-v1}. Peforma pendeteksian dapat berjalan baik dala beberapa kondisi waktu apabila memiliki cukup pencahayaan. Untuk pengembangan lebih lanjut pada penelitian mendatang, diperlukan penambahan jumlah dataset yang masih sedikit pada kelas pejalan kaki dan \textit{zebra cross} serta pembuatan dataset pejalan kaki di Indonesia karena perilaku pejalan kaki antar negara memiliki perbedaan yang cukup
+	signifikan.
 	
 	\bibliographystyle{IEEEtran}
 	\bibliography{dpustaka}
